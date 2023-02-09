@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <table className="transaction-history">
+    <table class="transaction-history">
       <thead>
         <tr>
           <th>Type</th>
@@ -29,7 +29,7 @@ TransactionHistory.propTypes = {
     PropTypes.exact({
       id: PropTypes.string.isRequired,
       type: PropTypes.string.isRequired,
-      ammount: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
       currency: PropTypes.string.isRequired,
     })
   ),
