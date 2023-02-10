@@ -1,11 +1,22 @@
 import styled from 'styled-components';
 
 export const Item = styled.li`
-  border: solid 1px black;
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 `;
 
 export const Status = styled.span`
-  color: ${({ friendStatus }) => (friendStatus ? 'green' : 'red')};
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  color: transparent;
+  background-color: ${({ friendStatus }) => (friendStatus ? 'green' : 'red')};
 `;
 
 export const FriendAvatar = styled.img`
@@ -14,4 +25,5 @@ export const FriendAvatar = styled.img`
 
 export const FriendName = styled.p`
   font-size: 20px;
+  font-weight: 500;
 `;

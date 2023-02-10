@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const ProfileCard = styled.div`
-  max-width: 300px;
-  height: 400px;
+  width: 250px;
+  height: 350px;
   margin: 0 auto;
   background-color: papayawhip;
   padding: 10px 60px;
@@ -26,11 +26,14 @@ export const Name = styled.p`
   text-align: center;
   font-size: 22px;
   font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
 `;
 
 export const UserTag = styled.p`
   text-align: center;
   font-size: 16px;
+  margin-bottom: 5px;
 `;
 
 export const UserLocation = styled.p`
